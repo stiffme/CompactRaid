@@ -177,9 +177,14 @@ local function UnitFrame_UpdateBuffs(self)
 	local unit = self.displayedUnit
 	if not unit then return end
 	local i
-	for i = 1, 3 do
+	local germination = false
+	for i = 1, 4 do
 		local frame = self.buffFrames[i]
 		local name, _, icon, count, _, duration, expires = UnitBuff(unit, i, "RAID|PLAYER")
+		if not name and not germination and addon.db.fixGermination then
+			name, _, icon, count, _, duration, expires = UnitBuff(unit, "回春术（萌芽）",nil, "PLAYER")
+			germination = true
+		end
 		UpdateAuras(frame, name, icon, count, duration, expires)
 	end
 end
@@ -1443,7 +1448,7 @@ function addon._UnitButton_OnLoad(frame)
 	frame.dispelFrames = {}
 	frame.dispelable = {}
 	local i
-	for i = 1, 3 do
+	for i = 1, 4 do
 		local buff = CreateAuraFrame("buff", name.."Buff"..i, buffParent, frame.buffFrames)
 		if i == 1 then
 			buff:SetPoint("BOTTOMRIGHT", healthBar, "BOTTOMRIGHT", -2, 1)
