@@ -111,4 +111,5 @@ addon.L = {
 	["character profiles"] = "Character profiles",
 	["deleting profile"] = "Deleting profile data |cff00ff00%s|r, are you sure?",
 	["font outline"] = "Font outline",
+	["fix germination"] = "修复萌芽",
 }
