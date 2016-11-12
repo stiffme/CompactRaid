@@ -301,6 +301,7 @@ group:AddButton(L["show buffs"], "showBuffs")
 group:AddButton(L["show debuffs"], "showDebuffs")
 group:AddButton(L["only show dispellable debuffs"], "onlyDispellable")
 group:AddButton(L["show dispels"], "showDispels")
+group:AddButton(L["fix germination"], "fixGermination")
 
 ------------------------------------------------------------
 -- Character profiles
@@ -470,6 +471,7 @@ local function InitOptionData(db, chardb)
 	LoadOption("showDebuffs")
 	LoadOption("onlyDispellable")
 	LoadOption("showDispels")
+	LoadOption("fixGermination")
 end
 
 addon:RegisterEventCallback("OnInitialize", InitOptionData)

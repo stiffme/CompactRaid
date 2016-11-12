@@ -115,4 +115,5 @@ addon.L = {
 	["character profiles"] = "角色配置數據",
 	["deleting profile"] = "刪除角色配置數據|cff00ff00%s|r，你確定嗎？",
 	["font outline"] = "字體描邊",
+	["fix germination"] = "修复萌芽",
 }
