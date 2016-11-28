@@ -1,4 +1,4 @@
-<Ui xmlns="http://www.blizzard.com/wow/ui/">
+﻿<Ui xmlns="http://www.blizzard.com/wow/ui/">
 	<Button name="AbinCompactRaidUnitButtonTemplate" inherits="SecureUnitButtonTemplate,SecureHandlerEnterLeaveTemplate" hidden="true" virtual="true">	
 		<Attributes>
 			<Attribute name="type1" type="string" value="target"/>

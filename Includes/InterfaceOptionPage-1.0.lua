@@ -1,4 +1,4 @@
------------------------------------------------------------
+﻿-----------------------------------------------------------
 -- InterfaceOptionPage-1.0.lua
 -----------------------------------------------------------
 -- A simple function set for implementing Blizzard Interface Option style option

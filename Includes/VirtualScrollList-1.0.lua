@@ -1,4 +1,4 @@
------------------------------------------------------------
+﻿-----------------------------------------------------------
 -- VirtualScrollList-1.0.lua
 -----------------------------------------------------------
 -- A virtual scroll list is a scroll list frame that is capable of displaying infinite
