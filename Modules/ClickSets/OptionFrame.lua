@@ -15,7 +15,7 @@ local _G = _G
 local _
 
 local L = CompactRaid:GetLocale("ClickSets")
-local module = CompactRaid:FindModule("ClickSets")
+local module = CompactRaid:GetModule("ClickSets")
 if not module then return end
 
 local templates = CompactRaid.optionTemplates

@@ -5,7 +5,7 @@
 -- 2013/3/13
 ------------------------------------------------------------
 
-local module = CompactRaid:FindModule("RaidDebuff")
+local module = CompactRaid:GetModule("RaidDebuff")
 if not module then return end
 
 local TIER = 5 -- Mists of Panaria

@@ -5,7 +5,7 @@
 -- 2016/09/13
 ------------------------------------------------------------
 
-local module = CompactRaid:FindModule("RaidDebuff")
+local module = CompactRaid:GetModule("RaidDebuff")
 if not module then return end
 
 local TIER = 7 -- Legion

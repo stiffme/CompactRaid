@@ -12,7 +12,7 @@ local GetAddOnMetadata = GetAddOnMetadata
 local _
 
 local L = CompactRaid:GetLocale("Artwork")
-local module = CompactRaid:FindModule("Artwork")
+local module = CompactRaid:GetModule("Artwork")
 if not module then return end
 
 local page = module.optionPage
